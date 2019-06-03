@@ -27,19 +27,19 @@
     <hr>
 
     <h3><strong>About You</strong></h3>
-    <h4>Name (Required)</h4>
+    <h4 id="name-label">Name (Required)</h4>
     <input type="text" id="name" class="form-control" required>
 
-    <h4>Link to Photo Image (Required)</h4>
+    <h4 id="photo-label">Link to Photo Image (Required)</h4>
     <input type="text" id="photo" class="form-control" required>
 
     <hr>
 
     <h3><strong>Question 1</strong></h3>
-    <h4>How much do you prefer to go out versus staying in?</h4>
+    <h4>I prefer to go out versus staying in</h4>
     <select class="chosen-select" id="q1">
       <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
+      <option selected="selected" value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
@@ -47,10 +47,10 @@
     </select>
 
     <h3><strong>Question 2</strong></h3>
-    <h4>Do you consider yourself to be analytically minded versus creative?</h4>
+    <h4>I am more analytically-minded versus creatively-minded</h4>
     <select class="chosen-select" id="q2">
       <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
+      <option selected="selected" value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
@@ -59,10 +59,10 @@
 
 
     <h3><strong>Question 3</strong></h3>
-    <h4>Do you like dogs?</h4>
+    <h4>I like dags[sic]</h4>
     <select class="chosen-select" id="q3">
       <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
+      <option selected="selected" value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
@@ -71,10 +71,10 @@
 
 
     <h3><strong>Question 4</strong></h3>
-    <h4>Do you like Game of Thrones?</h4>
+    <h4>I love Game of Thrones</h4>
     <select class="chosen-select" id="q4">
       <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
+      <option selected="selected" value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
@@ -83,10 +83,10 @@
 
 
     <h3><strong>Question 5</strong></h3>
-    <h4>Would you be comfortable at a black tie event?</h4>
+    <h4>I would be comfortable at a black tie event</h4>
     <select class="chosen-select" id="q5">
       <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
+      <option selected="selected" value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
@@ -95,10 +95,10 @@
 
 
     <h3><strong>Question 6</strong></h3>
-    <h4>Do you shower every day?</h4>
+    <h4>I like to shower every day</h4>
     <select class="chosen-select" id="q6">
       <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
+      <option selected="selected" value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
@@ -107,10 +107,10 @@
 
 
     <h3><strong>Question 7</strong></h3>
-    <h4>Are you likely to go on a spontaneous blind date?</h4>
+    <h4>I would be likely to go on a spontaneous blind date</h4>
     <select class="chosen-select" id="q7">
       <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
+      <option selected="selected" value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
@@ -118,10 +118,10 @@
     </select>
 
     <h3><strong>Question 8</strong></h3>
-    <h4>Do you enjoy horror/slasher films?</h4>
+    <h4>I enjoy horror/slasher films</h4>
     <select class="chosen-select" id="q8">
       <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
+      <option selected="selected" value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
@@ -129,10 +129,10 @@
     </select>
 
     <h3><strong>Question 9</strong></h3>
-    <h4>Do you call your mom frequently?</h4>
+    <h4>I am close to my family</h4>
     <select class="chosen-select" id="q9">
       <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
+      <option selected="selected" value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
@@ -140,10 +140,10 @@
     </select>
 
     <h3><strong>Question 10</strong></h3>
-    <h4>Would you go on a reality show like Survivor?</h4>
+    <h4>I would you go on a reality show like Survivor</h4>
     <select class="chosen-select" id="q10">
       <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
+      <option selected="selected" value="1">1 (Strongly Disagree)</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
@@ -153,16 +153,11 @@
     <br>
     <br>
 
-    <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
-
-    <hr>
-    <footer class="footer">
-      <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
-      </div>
-    </footer>
+    <div>
+      <button type="submit" class="btn btn-primary btn-lg btn-block3" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+      Submit</button>
+    </div>
+    <br>
 
   </div>
 
@@ -188,68 +183,50 @@
     </div>
   </div>
 
+  <script type="text/javascript">
+  $( document ).ready(function (){
+    $("#submit").on("click", function(event) {
+      console.log("val =" + $("#name").val() )
+      event.preventDefault();
+      if ($("#name").val() != "" || $("#photo").val() != "") {
+      var friend = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+      };
 
-<!-- 
+          console.log(friend);
+  
 
 
+      $.post("/api/friends", friend)
+        .then(function(data) {
+          console.log("api/friends");
+        });
 
-<!DOCTYPE html>
-<html lang="en">
+      $("#name-label").css("color", "black");
+      $("#photo-label").css("color", "black");
 
-<head>
-  <meta charset="UTF-8">
-  <title>Friend Finder</title>
-  <!-- Latest compiled and minified CSS & JS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-</head>
-
-<body>
-
-  <div class="container">
-    <div class="jumbotron">
-      <h1>SURVEY!!!!!!</h1>
-      <h3>Answer some questions. Find a friend!</h3>
-      <hr>
-      <a href="/"><button class="btn btn-primary btn-lg"><span class="fas fa-poll"></span> Take the survey!</button></a>
-    </div>
-    <div class="row">
-
-      <div class="col-12">
-
-        <div class="card">
-          <div class="card-header">
-            <strong>Character Database</strong></h3>
-          </div>
-          <div class="card-body">
-            <ul id="character-section" class="list-group">
-
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script type="text/javascript">
-
-      $.get("/api/characters", function(data) {
-        for (var i = 0; i < data.length; i++) {
-          console.log(data[i]);
-          var listGroupItem = $("<li class='list-group-item'>");
-
-          listGroupItem.append($("<h2>").text("Name: " + data[i].name));
-          listGroupItem.append($("<h3>").text("Role: " + data[i].role));
-          listGroupItem.append($("<h3>").text("Age: " + data[i].age));
-          listGroupItem.append($("<h3>").text("Force Points: " + data[i].forcePoints));
-
-          $("#character-section").append(listGroupItem);
-        }
+      }
+      else {
+        $("#name-label").css("color", "red");
+        $("#photo-label").css("color", "red");
+        alert ("Please enter your name and a link to your photo");
+      }
       });
-    </script>
+ 
+    });
+  </script>
 
-</body>
 
-</html> --> -->
