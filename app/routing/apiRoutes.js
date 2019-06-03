@@ -1,22 +1,22 @@
 const express = require('express');
-const path = require("path");
 const Friends = require("../data/friends");
 
 var apiRoutes = express.Router();
 
-
+//show all friends
 apiRoutes.get("/api/friends", function(req, res) {
-    // console.log("GETT!!!!!!");
     res.json(Friends.friendsArr);
 });
 
+//take a friend, return their closest match, and add them to possible friends
 apiRoutes.post("/api/friends", function(req, res) {
-    var friend = req.body;
-    Friends.findFriend();
-    console.log("friend =" + JSON.stringify(Friends.friendsArr));
+    var newFriend = req.body;
+  
+    var match = Friends.findFriend(newFriend);
     
-    // Friends.friends.push(friend);
-    res.json(friend);
+    Friends.friendsArr.push(newFriend);
+
+    res.json(match);
 });
 
 module.exports = apiRoutes;

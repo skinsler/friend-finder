@@ -161,11 +161,9 @@
 
   </div>
 
-  <!-- Modal -->
   <div id="results-modal" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
-      <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -173,7 +171,7 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+          <img id="match-img" class="img-responsive" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -206,20 +204,24 @@
           ]
       };
 
-          console.log(friend);
-  
 
 
-      $.post("/api/friends", friend)
-        .then(function(data) {
-          console.log("api/friends");
-        });
+    $.post("/api/friends", friend, function(data) {
 
+        $("#match-name").text(data.name);
+        $("#match-img").attr("src", data.photo);
+
+        $("#results-modal").modal("toggle");
+
+    });
+
+    //reset font color on required labels if fields are completed
       $("#name-label").css("color", "black");
       $("#photo-label").css("color", "black");
 
       }
       else {
+        //alert warning message and change field labels colors to red if they are not filled out
         $("#name-label").css("color", "red");
         $("#photo-label").css("color", "red");
         alert ("Please enter your name and a link to your photo");

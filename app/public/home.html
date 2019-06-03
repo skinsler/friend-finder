@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Friend Finder</title>
-  <!-- Latest compiled and minified CSS & JS -->
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery.js"></script>
@@ -19,41 +19,8 @@
       <h1>Friend Finder</h1>
       <h3>Answer some questions. Find a friend!</h3>
       <hr>
-      <a href="/"><button class="btn btn-primary btn-lg"><span class="fas fa-poll"></span> Take the survey!</button></a>
+      <a href="/survey"><button class="btn btn-primary btn-lg"><span class="fas fa-poll"></span> Take the survey!</button></a>
     </div>
-    <div class="row">
-
-      <div class="col-12">
-
-        <div class="card">
-          <div class="card-header">
-            <strong>Character Database</strong></h3>
-          </div>
-          <div class="card-body">
-            <ul id="character-section" class="list-group">
-
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script type="text/javascript">
-
-      $.get("/api/characters", function(data) {
-        for (var i = 0; i < data.length; i++) {
-          console.log(data[i]);
-          var listGroupItem = $("<li class='list-group-item'>");
-
-          listGroupItem.append($("<h2>").text("Name: " + data[i].name));
-          listGroupItem.append($("<h3>").text("Role: " + data[i].role));
-          listGroupItem.append($("<h3>").text("Age: " + data[i].age));
-          listGroupItem.append($("<h3>").text("Force Points: " + data[i].forcePoints));
-
-          $("#character-section").append(listGroupItem);
-        }
-      });
-    </script>
 
 </body>
 
