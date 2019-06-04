@@ -1,5 +1,5 @@
 //define some friends for testing
-var friendsArr = [
+let friendsArr = [
     {
         "name": "Tiny Tim",
         "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Tiny_Tim.jpg/220px-Tiny_Tim.jpg",
@@ -28,7 +28,7 @@ let findFriend = function(f) {
         for (let j = 0; j < friendsArr[i].scores.length; j++) {
           totalDifference += Math.abs(f.scores[j] - friendsArr[i].scores[j]);
         }
-        //see if all following elements match better than the 0th element 
+        //determine if any subsequent elements match better than the 0th element 
         if (i===0) {
             minDifference = totalDifference
             match = friendsArr[i];   
